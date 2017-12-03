@@ -1,0 +1,7 @@
+This code is showing the different power bank at a different prices.
+1.) I create a my own Json data which shows the different power bank specification of a different Brand.
+2.) After that i create my html file where i wrote javascript function.
+3.) first function shows a particular modal specification of a particular Brand. When you enter the Brand name and product name in the function of product then 
+    fuction will show all modal specification.
+4.) When i entered the particular Brand Name in the function it will show all the product of this Brand and it's Modal specification.
+5.) Third function is simply read the all data of Json.     

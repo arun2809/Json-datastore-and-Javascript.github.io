@@ -1,0 +1,51 @@
+<html>
+<head>
+  <script type = "text/javascript" src="PowerBankJsonData.json"></script>
+</head>
+ <body onload = "load()">
+ </body>
+ 
+  <script>
+	var variousPowerBank = JSON.parse(powerBank);
+	// all the json data will store in the object "variousPowerBank"
+    function load(){
+    console.log(variousPowerBank);
+    // read all json data in console through abject	
+	};
+	
+	 function product(productName , brand){
+     for( brands in variousPowerBank){
+	 // we use brands as a key, we store all key object in brands one by one.
+     if( brand == brands){
+	 // if the brand is equal to brands key then all the data of the particular brands is store in object.
+        var object = variousPowerBank[brands];
+      }
+    }
+    for(var i=0; i<object.length; i++){
+       if(object[i].Model == productName){
+	   // now we can simply search a product in a particular brands object. 
+       console.log(object[i]);
+      }
+    }
+   };
+	
+	var brand = "Mi";
+    var productName = "Mi PLM05ZM";
+	// we call the function using different productName  and Brand. 
+    product(productName , brand);
+	
+    // this function is show the all product of a perticular brand.	
+	function allproductOfParticularBrand( brand ){
+	  for(brandProduct in variousPowerBank){
+         if(brandProduct == brand){
+         console.log(variousPowerBank[brandProduct]);
+         }
+       }
+	 };
+	 
+	brand = "Intex";
+	// we can call the fuction using different brand name.
+	allproductOfParticularBrand(brand);
+	
+  </script>
+</html>
